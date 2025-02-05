@@ -10,7 +10,7 @@ services:
       dockerfile: jenkins.Dockerfile
     volumes:
       - .:/app
-      - /tmp/jenkins_home:/var/jenkins_home
+      - /var/jenkins_home:/var/jenkins_home
     ports:
       - "8080:8080"
     user: jenkins
